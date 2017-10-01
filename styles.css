@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+body{
+	background-image:url('spacebackground.png');
+  overflow:hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #F0F8FF;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+p {
+	color: #4E443C;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.header{
+	padding-bottom: 5px;
+	padding-top: 0px;
+	height:110px;
+}
+
+.title{
+  color: #F0F8FF;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+.intro{
+  color:#F0F8FF;
+}
+
+.wrapper{
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  margin-top:50px;
+  padding-bottom: 75px;
+  position:absolute;
+  top: 110px;
+  left:0px;
+  right:0px;
+  bottom:0px; 
+}
+
+.img{
+	width: 450px; 
+	height: 300px;
+	margin:auto;
+  border-radius:10px;
+  box-shadow: 0 6px 20px 0 rgba(255, 229, 61, 0.5), 0 6px 20px 0 rgba(255, 229, 61, 0.5);
+}
+
+.progress{
+	width: 200px;
+	height:500px;
+}
+
+.buttons{
+	margin: auto;
+	padding-top: 20px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+
+}
+
+.button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #d6d9db;
+  border: 3px solid black;
+  border-radius:6px;
+	width: 200px;
+	height: 50px;
+	font-family: 'Inconsolata', monospace;
+	font-size: 24px;
+  cursor:pointer;
+}
+
+.button:hover{
+  background-color:#979899;
+}
+
+.progressBar{
+  width:60%;
+  position:absolute;
+  left:20%;
+  top:20px;
+}
+
+#line{
+  width:100%;
+  position:absolute;
+  top:15px;
+}
+
+#rocket{
+  position:absolute;
+  height:30px;
+  width:60px;
+  top:10px;
+  left:0px;
+  transition-timing-function: ease out`;
+  transition: left 0.5s;
+}
+
+#overlay{
+  position:absolute;
+  height:100%;
+  width:100%;
+  opacity:0;
+  background-color:#001b47;
+  transition:all 1s;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+#overText{
+  display:hidden;
+  font-family:'Inconsolata';
+  color:white;
+  font-weight:bolder;
+  font-size:5em;
+}
+
+.learnMore{
+  position:absolute;
+  width:5%;
+  left:95%;
+  top:5px;
+  color:white;
+  border:1px solid white;
+  border-radius:3px;
+  background-color:#979899;
+  cursor:pointer;
+  text-align:center;
+  padding:5px;
+}
+
+#book{
+  height:200px;
+  width:200px;
+  display:none;
+}
